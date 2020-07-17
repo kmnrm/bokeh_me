@@ -54,6 +54,5 @@ def save_bokeh(image_bokeh,
         save_directory = save_directory[:-1]
     save_name = f'{save_name}_bokeh_{addition_to_name}.{image_format}'
     save_path = f'{save_directory}/{save_name}'
-    print(save_path)
     cv2.imwrite(save_path, image_bokeh)
     return save_name
