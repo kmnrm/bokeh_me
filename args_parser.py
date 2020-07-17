@@ -24,7 +24,7 @@ def is_valid_file(parser, arg):
 
 
 def parse_arguments():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description=DESCRIPTION)
     parser.add_argument('image_path',
                         type=lambda x: is_valid_file(parser, x),
                         help='The path of the image to process.')
